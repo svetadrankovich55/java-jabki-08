@@ -1,6 +1,11 @@
 package homework.sortable;
 
-public class SortableUtils {
+public final class SortableUtils {
+
+    private SortableUtils() {
+        throw new UnsupportedOperationException("Утилитарный класс — нельзя создавать экземпляры.");
+    }
+
     public static void sort(Sortable[] array) {
         for (int i = 0; i < array.length - 1; i++) {
             for (int j = 0; j < array.length - i - 1; j++) {

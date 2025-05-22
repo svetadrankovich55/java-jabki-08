@@ -13,5 +13,4 @@ public class TextFile extends File{
     public long getSize(){
         return content.length();
     }
-
 }
